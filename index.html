@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>รับสมัครแอดมิน Discord</title>
+<meta name="description" content="รับสมัครแอดมิน Discord ทำงานออนไลน์ เวลายืดหยุ่น จ่ายตามผลงานจริงทุกสัปดาห์">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💬</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#fff;--fg:#000;--mute:#595959;--line:#000;--soft:#f2f2f2}
+@media (prefers-color-scheme:dark){:root{--bg:#000;--fg:#fff;--mute:#a6a6a6;--line:#fff;--soft:#161616}}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{margin:0;background:var(--bg);color:var(--fg);font-family:"IBM Plex Sans Thai",Tahoma,"Noto Sans Thai",sans-serif;font-size:17px;line-height:1.75}
+main{max-width:760px;margin:0 auto;padding:56px 24px 96px}
+h1{font-size:clamp(2.6rem,10vw,4.6rem);line-height:1.15;margin:0 0 24px;font-weight:700;letter-spacing:-.01em}
+h2{font-size:1.6rem;line-height:1.3;margin:0 0 20px;padding-top:20px;border-top:3px solid var(--line);font-weight:700}
+h3{font-size:1.1rem;margin:28px 0 8px;font-weight:600}
+section{margin-top:72px}
+p{margin:0 0 14px;max-width:62ch}
+.lead{font-size:1.2rem;max-width:34ch}
+.mute{color:var(--mute)}
+a{color:inherit}
+mark{background:var(--fg);color:var(--bg);padding:0 .3em;font-weight:600}
+:focus-visible{outline:3px solid var(--fg);outline-offset:3px}
+.btn{display:inline-block;margin-top:12px;padding:14px 28px;background:var(--fg);color:var(--bg);text-decoration:none;font-weight:700;border:2px solid var(--fg)}
+.btn:hover{background:var(--bg);color:var(--fg)}
+.btn.ghost{background:var(--bg);color:var(--fg)}
+.btn.ghost:hover{background:var(--fg);color:var(--bg)}
+ul.plain{list-style:none;margin:0;padding:0}
+ul.plain li{padding:12px 0;border-bottom:1px solid var(--line)}
+ul.dot{padding-left:1.2em;margin:0 0 14px}
+ul.dot li{margin-bottom:6px}
+.row{display:flex;justify-content:space-between;gap:16px;padding:14px 0;border-bottom:1px solid var(--line)}
+.row b{white-space:nowrap}
+.job{display:grid;grid-template-columns:200px 1fr;gap:8px 24px;padding:18px 0;border-bottom:1px solid var(--line)}
+.job strong{font-weight:700}
+.job p{margin:0}
+@media (max-width:600px){.job{grid-template-columns:1fr}}
+.calc{border:3px solid var(--line);padding:24px;margin-top:8px}
+.calc label{display:flex;justify-content:space-between;align-items:center;gap:16px;padding:8px 0;border-bottom:1px solid var(--line)}
+.calc input[type=number]{width:84px;font:inherit;padding:6px 8px;border:2px solid var(--line);background:var(--bg);color:var(--fg);text-align:right}
+.calc input[type=checkbox]{width:24px;height:24px;accent-color:var(--fg)}
+.total{display:flex;justify-content:space-between;align-items:baseline;margin-top:20px;font-weight:700}
+.total output{font-size:clamp(2.2rem,9vw,3.4rem);line-height:1}
+.ex{display:grid;grid-template-columns:1fr auto;gap:4px 16px;padding:16px 0;border-bottom:1px solid var(--line)}
+.ex .amt{font-weight:700;font-size:1.3rem;grid-row:1/3;grid-column:2;align-self:center}
+.ex p{margin:0}
+details{border-bottom:1px solid var(--line)}
+summary{cursor:pointer;padding:14px 0;font-weight:600;list-style:none;display:flex;justify-content:space-between;gap:16px}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";font-weight:400}
+details[open] summary::after{content:"−"}
+details p{margin:0 0 14px}
+footer{margin-top:72px;padding-top:20px;border-top:1px solid var(--line);font-size:.9rem;color:var(--mute)}
+</style>
+</head>
+<body>
+<main>
+
+<header>
+  <h1>รับสมัครแอดมิน<br>Discord</h1>
+  <p class="lead">ทำงานออนไลน์จากที่บ้าน เวลายืดหยุ่น จ่ายตามผลงานจริง ทุกสัปดาห์</p>
+  <p>ร้านกำลังมองหาแอดมินมาช่วยดูแลร้านระยะยาว งานหลักมี 3 อย่าง คือตอบลูกค้า ตัดคลิป และหาลูกค้าใหม่ ไม่จำเป็นต้องมีประสบการณ์ ขอแค่ตั้งใจ รับผิดชอบ และเรียนรู้เร็ว</p>
+  <a class="btn" href="#apply">สมัครเลย</a>
+  <a class="btn ghost" href="#calc">คำนวณรายได้</a>
+</header>
+
+<section id="jobs">
+  <h2>หน้าที่ของแอดมิน</h2>
+  <div class="job">
+    <strong>ตอบลูกค้าและดูแล Ticket</strong>
+    <p>ตอบคำถามเรื่องราคา ยศ และบริการ อธิบายขั้นตอนสั่งซื้อ ช่วยลูกค้าแจ้งโอนเงิน ติดตามจนจบ ไม่ปล่อยแชทค้าง เจอเรื่องที่ไม่แน่ใจให้ส่งต่อเจ้าของร้าน ห้ามตอบเดา</p>
+  </div>
+  <div class="job">
+    <strong>ตัดต่อคลิป</strong>
+    <p>ตัดคลิปสั้นเพื่อโปรโมตร้าน ส่งงานตามกำหนดที่ตกลงกัน และแก้งานตามคำแนะนำได้ <mark>[จำนวนรอบแก้ไข เช่น 2 รอบ]</mark></p>
+  </div>
+  <div class="job">
+    <strong>หาลูกค้าใหม่</strong>
+    <p>แนะนำร้านให้คนที่สนใจ ชวนเข้าเซิร์ฟเวอร์ และอธิบายสินค้าให้เข้าใจง่าย ลูกค้าที่หามาได้ต้องแจ้งเจ้าของร้านให้ชัดเจน เพราะใช้คิดคอมมิชชัน</p>
+  </div>
+</section>
+
+<section id="pay">
+  <h2>ค่าตอบแทน</h2>
+  <p>จ่ายตามผลงานจริง แบ่งเป็น 3 ส่วน</p>
+
+  <h3>1) คอมมิชชัน 15% จากลูกค้าที่คุณหามาได้</h3>
+  <ul class="plain">
+    <li class="row" style="border-bottom:1px solid var(--line)"><span>ลูกค้าซื้อยศ 20 บาท</span><b>คุณได้ 3 บาท</b></li>
+    <li class="row"><span>ลูกค้าซื้อยศ 40 บาท</span><b>คุณได้ 6 บาท</b></li>
+    <li class="row"><span>ลูกค้าซื้อบริการ 200 บาท</span><b>คุณได้ 30 บาท</b></li>
+  </ul>
+  <p class="mute" style="margin-top:12px">นับเฉพาะลูกค้าที่จ่ายเงินแล้วและมาจากการหาของแอดมินเอง ลูกค้าที่ทักร้านมาเองไม่นับ ถ้ามีการคืนเงิน ยอดนั้นจะไม่นับ</p>
+
+  <h3>2) ค่าตัดคลิป จ่ายเป็นรายชิ้น</h3>
+  <ul class="plain">
+    <li class="row"><span>คลิปสั้นทั่วไป</span><b>20 บาท/คลิป</b></li>
+    <li class="row"><span>คลิปตัดต่อละเอียด</span><b>40 บาท/คลิป</b></li>
+    <li class="row"><span>งานตัดต่อพิเศษ</span><b>ตกลงราคาก่อนเริ่มงาน</b></li>
+  </ul>
+  <p class="mute" style="margin-top:12px">นับเมื่อคลิปผ่านการตรวจจากเจ้าของร้านแล้ว</p>
+
+  <h3>3) ค่าดูแลลูกค้า</h3>
+  <ul class="plain">
+    <li class="row"><span>สำหรับแอดมินที่ตอบลูกค้าและดูแล Ticket สม่ำเสมอตามที่ตกลง</span><b>50 บาท/สัปดาห์</b></li>
+  </ul>
+</section>
+
+<section id="calc">
+  <h2>คำนวณรายได้ของคุณ</h2>
+  <p>ใส่จำนวนงานที่คิดว่าทำได้ใน 1 สัปดาห์ แล้วดูว่าจะได้เท่าไหร่</p>
+  <form class="calc" onsubmit="return false">
+    <label>ลูกค้าที่หามาได้ ซื้อยศ 20 บาท (คน)<input type="number" id="a20" min="0" value="5" inputmode="numeric"></label>
+    <label>ลูกค้าที่หามาได้ ซื้อยศ 40 บาท (คน)<input type="number" id="a40" min="0" value="5" inputmode="numeric"></label>
+    <label>ลูกค้าที่หามาได้ ซื้อบริการ 200 บาท (คน)<input type="number" id="a200" min="0" value="2" inputmode="numeric"></label>
+    <label>คลิปสั้นทั่วไป (คลิป)<input type="number" id="cs" min="0" value="3" inputmode="numeric"></label>
+    <label>คลิปตัดต่อละเอียด (คลิป)<input type="number" id="cd" min="0" value="0" inputmode="numeric"></label>
+    <label>ดูแลลูกค้าครบสัปดาห์ (50 บาท)<input type="checkbox" id="care" checked></label>
+    <div class="total"><span>รายได้ต่อสัปดาห์</span><span><output id="sum" for="a20 a40 a200 cs cd care" aria-live="polite">215</output> บาท</span></div>
+  </form>
+  <p class="mute" style="margin-top:12px">ตัวเลขนี้ยังไม่หักเพดานรวม 30% ของยอดขายร้านในสัปดาห์นั้น (ดูหัวข้อเงื่อนไข)</p>
+</section>
+
+<section id="examples">
+  <h2>ตัวอย่างรายได้</h2>
+  <div class="ex"><strong>สัปดาห์ปกติ</strong><span class="amt">102 บาท</span>
+    <p class="mute">ร้านขายได้ประมาณ 500 บาท หาลูกค้ายศ 20 บาท 2 คน ยศ 40 บาท 1 คน ตัดคลิป 2 คลิป<br>6 + 6 + 40 + 50</p></div>
+  <div class="ex"><strong>สัปดาห์กลาง ๆ</strong><span class="amt">215 บาท</span>
+    <p class="mute">หาลูกค้ายศ 20 บาท 5 คน ยศ 40 บาท 5 คน บริการ 200 บาท 2 คน ตัดคลิป 3 คลิป<br>105 + 60 + 50</p></div>
+  <div class="ex"><strong>สัปดาห์ลูกค้าเยอะ</strong><span class="amt">428 บาท</span>
+    <p class="mute">ร้านขายได้ประมาณ 3,000 บาท หาลูกค้ายศ 20 บาท 10 คน ยศ 40 บาท 8 คน บริการ 200 บาท 4 คน คลิปสั้น 5 คลิป คลิปละเอียด 2 คลิป<br>198 + 180 + 50</p></div>
+  <p style="margin-top:14px">รายได้ไม่ตายตัว ขึ้นอยู่กับจำนวนลูกค้าและงานที่ทำจริง</p>
+</section>
+
+<section id="terms">
+  <h2>เงื่อนไข</h2>
+  <h3>การจ่ายเงิน</h3>
+  <ul class="dot">
+    <li><b>เพดานรวม:</b> ค่าตอบแทนทั้งหมดต่อสัปดาห์ไม่เกิน 30% ของยอดขายร้านในสัปดาห์นั้น เช่น ร้านขายได้ 400 บาท สูงสุด 120 บาท ขายได้ 3,000 บาท สูงสุด 900 บาท</li>
+    <li><b>จ่ายทุกสัปดาห์</b> ทุกวัน<mark>[ใส่วัน]</mark> ผ่าน <mark>[ช่องทางจ่ายเงิน]</mark></li>
+    <li><b>สรุปให้ดูทุกสัปดาห์:</b> ยอดขาย ลูกค้าที่หามาได้ จำนวนคลิป และวิธีคำนวณ ตรวจสอบได้ชัดเจน</li>
+    <li>ยอดคิดจากเงินที่ร้านได้รับจริงเท่านั้น</li>
+  </ul>
+  <h3>ช่วงทดลองงาน</h3>
+  <ul class="dot">
+    <li>ทดลองงาน <mark>[2-4]</mark> สัปดาห์ ใช้ค่าตอบแทนตามหน้านี้</li>
+    <li>จบช่วงทดลอง คุยกันว่าจะทำต่อและปรับอัตราหรือไม่</li>
+    <li>ถ้าไม่เหมาะ แจ้งกันล่วงหน้าได้ทั้งสองฝ่าย</li>
+  </ul>
+  <h3>กฎการทำงาน</h3>
+  <ul class="dot">
+    <li>ห้ามเปิดเผยข้อมูลลูกค้าและข้อมูลภายในร้าน</li>
+    <li>ห้ามรับเงินจากลูกค้าเข้าบัญชีตัวเอง ให้โอนเข้าช่องทางของร้านเท่านั้น</li>
+    <li>แจ้งล่วงหน้าถ้าหายไปหรือไม่ว่าง</li>
+  </ul>
+</section>
+
+<section id="who">
+  <h2>คุณสมบัติที่ต้องการ</h2>
+  <ul class="dot">
+    <li>ตอบแชทสุภาพ ตอบไว เป็นมิตรกับลูกค้า</li>
+    <li>ซื่อสัตย์ ไม่แตะเงินหรือข้อมูลลูกค้าโดยไม่ได้รับอนุญาต</li>
+    <li>ตัดต่อคลิปเบื้องต้นได้ (มีตัวอย่างผลงานยิ่งดี)</li>
+    <li>ใช้ Discord คล่อง เข้าใจเรื่อง Role และ Ticket</li>
+    <li>ออนไลน์ประมาณ <mark>[ชั่วโมงต่อวัน]</mark> และตอบกลับภายในเวลาที่ตกลง</li>
+  </ul>
+</section>
+
+<section id="faq">
+  <h2>ถามบ่อย</h2>
+  <details><summary>ต้องมีประสบการณ์ไหม?</summary><p>ไม่จำเป็น แต่ถ้ามีผลงานจะได้เปรียบ</p></details>
+  <details><summary>สัปดาห์ที่ขายน้อยได้เท่าไหร่?</summary><p>ได้ตามงานที่ทำจริง แต่ไม่เกินเพดาน 30% ของยอดขายร้านในสัปดาห์นั้น</p></details>
+  <details><summary>ค่าดูแลลูกค้าได้ทุกสัปดาห์ไหม?</summary><p>ได้เมื่อดูแลลูกค้าสม่ำเสมอตามที่ตกลง</p></details>
+  <details><summary>ทำพาร์ตไทม์ได้ไหม?</summary><p>ได้ ขอให้แจ้งเวลาที่ออนไลน์ชัดเจน</p></details>
+</section>
+
+<section id="apply">
+  <h2>วิธีสมัคร</h2>
+  <p>ทัก DM หาเจ้าของร้าน หรือเข้าเซิร์ฟเวอร์ของร้านก่อนก็ได้ แล้วแจ้งข้อมูลต่อไปนี้</p>
+  <ol class="dot">
+    <li>ชื่อและอายุ</li>
+    <li>ประสบการณ์ตอบลูกค้าหรือตัดต่อ (ถ้ามี)</li>
+    <li>วันและเวลาที่ออนไลน์ได้</li>
+    <li>ตัวอย่างผลงานคลิป (ถ้ามี)</li>
+    <li>เหตุผลที่อยากร่วมงาน</li>
+  </ol>
+  <a class="btn" href="https://discord.com/users/1048957220953542706" target="_blank" rel="noopener">ทัก DM ใน Discord</a>
+  <a class="btn ghost" href="https://discord.gg/umnW6jEd8" target="_blank" rel="noopener">เข้าเซิร์ฟเวอร์</a>
+</section>
+
+<footer>ค่าตอบแทนและเงื่อนไขอาจปรับได้เมื่อตกลงกับเจ้าของร้านในช่วงทดลองงาน</footer>
+</main>
+
+<script>
+(function(){
+  var ids=["a20","a40","a200","cs","cd"],rate=[3,6,30,20,40];
+  var el={};ids.concat(["care","sum"]).forEach(function(i){el[i]=document.getElementById(i)});
+  function calc(){
+    var t=0;
+    ids.forEach(function(id,i){var v=parseInt(el[id].value,10);t+=(isNaN(v)||v<0?0:v)*rate[i]});
+    if(el.care.checked)t+=50;
+    el.sum.textContent=t.toLocaleString("th-TH");
+  }
+  document.querySelector(".calc").addEventListener("input",calc);
+  calc();
+})();
+</script>
+</body>
+</html>
